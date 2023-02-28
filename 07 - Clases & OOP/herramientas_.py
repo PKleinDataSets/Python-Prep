@@ -1,3 +1,4 @@
+import copy
 class Herramientas :
     #def __init__(self) -> None:
      #   pass
@@ -5,7 +6,7 @@ class Herramientas :
     def __init__(self, lista_numeros):
         self.lista = lista_numeros 
     
-    def __es_Primo(self, n) :
+    def __esPrimo(self, n) :
         if (type(n) != int or n <= 0):
             print("Debe ser un numero entero y positivo")
         else:
@@ -19,7 +20,7 @@ class Herramientas :
     def lista_primos(self):
         list_prim = []
         for i in self.lista :
-            if self.__es_Primo(i):
+            if self.__esPrimo(i):
                 list_prim.append(i)
         return list_prim        
     
